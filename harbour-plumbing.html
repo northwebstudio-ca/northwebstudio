@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Harbour Plumbing</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{font:400 17px/1.6 Barlow,system-ui,sans-serif;color:#10222e}
+.nw{display:block;text-align:center;background:#10222e;color:#fff;font:500 13px system-ui;padding:8px;text-decoration:none}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;line-height:1.02;text-transform:uppercase}
+.w{padding-left:max(22px,calc(50% - 540px));padding-right:max(22px,calc(50% - 540px))}
+.top{background:#0c3a5b;color:#cfe3f1;font-size:.9rem;padding-top:8px;padding-bottom:8px;display:flex;justify-content:space-between}
+header{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;background:#fff}
+.logo{font:700 1.7rem "Barlow Condensed";text-transform:uppercase;color:#14507d;display:flex;gap:8px;align-items:center}
+.btn{display:inline-block;background:#e0530f;color:#fff;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:0;font-family:inherit;font-size:1rem;cursor:pointer}.btn:hover{background:#c4460a}
+.hero{background:linear-gradient(90deg,rgba(9,40,64,.94) 40%,rgba(9,40,64,.55)),url(https://images.unsplash.com/photo-1676210134188-4c05dd172f89?auto=format&fit=crop&w=1800&q=70) center/cover,url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201200%20600%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%230c3a5b%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%231a6396%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%221200%22%20height%3D%22600%22%20fill%3D%22url%28%23g%29%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%235ba3d0%22%20stroke-opacity%3D%22.35%22%20stroke-width%3D%2226%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M700%2080h300v180H820v220h260%22/%3E%3Cpath%20d%3D%22M640%20560V380h-140%22/%3E%3Cpath%20d%3D%22M1100%2080v-60%22/%3E%3C/g%3E%3Cg%20fill%3D%22%237fb9e0%22%20fill-opacity%3D%22.45%22%3E%3Ccircle%20cx%3D%221000%22%20cy%3D%2280%22%20r%3D%2226%22/%3E%3Ccircle%20cx%3D%22820%22%20cy%3D%22260%22%20r%3D%2226%22/%3E%3Ccircle%20cx%3D%22500%22%20cy%3D%22380%22%20r%3D%2226%22/%3E%3C/g%3E%3Cpath%20d%3D%22M930%20360c0%200-50%2062-50%2098a50%2050%200%200%200%20100%200c0-36-50-98-50-98z%22%20fill%3D%22%23e0530f%22%20fill-opacity%3D%22.85%22/%3E%3C/svg%3E") center/cover;color:#fff;padding-top:84px;padding-bottom:84px;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(3rem,6.5vw,5.2rem);margin-bottom:18px}.hero p{font-size:1.15rem;opacity:.92;max-width:28em;margin-bottom:26px}
+.card{background:#fff;color:#10222e;border-radius:14px;padding:28px;display:grid;gap:12px;box-shadow:0 24px 50px rgba(0,0,0,.28)}.card h3{font-size:1.8rem}
+input,select{font:inherit;padding:12px;border:1px solid #c7d4dd;border-radius:6px;width:100%}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);background:#f0f5f9;padding-top:26px;padding-bottom:26px;gap:16px;text-align:center}
+.trust b{font:700 2rem "Barlow Condensed";color:#14507d;display:block}.trust span{font-size:.92rem;color:#51606b}
+section{padding-top:84px;padding-bottom:84px}h2{font-size:2.8rem;margin-bottom:34px}
+.g{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.s{border:1px solid #dbe5ec;border-radius:12px;padding:28px;transition:.2s}.s:hover{border-color:#14507d;transform:translateY(-4px)}
+.s svg{width:44px;height:44px;margin-bottom:14px}.s h3{font-size:1.5rem;color:#14507d;margin-bottom:6px}.s p{color:#51606b;font-size:.98rem}
+.steps{background:#0c3a5b;color:#fff}.steps .g>div{border-top:3px solid #e0530f;padding-top:16px}.steps b{font:700 2.6rem "Barlow Condensed";color:#e0530f}.steps h3{font-size:1.5rem}.steps p{opacity:.85}
+.rev{background:#f0f5f9;border-radius:12px;padding:26px}.rev i{color:#e0a30f;font-style:normal;letter-spacing:2px}.rev p{margin:8px 0}.rev small{color:#51606b}
+details{border-bottom:1px solid #dbe5ec;padding:18px 0}summary{font-weight:600;cursor:pointer;font-size:1.1rem}details p{color:#51606b;margin-top:8px}
+.cta{background:#e0530f;color:#fff;text-align:center}.cta h2{margin-bottom:12px}.cta .btn{background:#fff;color:#e0530f}
+footer{background:#10222e;color:#c8d4dc;padding-top:30px;padding-bottom:30px;font-size:.95rem}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gal figure{margin:0}.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block;background:#dbe5ec}.gal figcaption{margin-top:10px;color:#51606b;font-size:.95rem}.sticky{display:none}
+@media(max-width:800px){.hero,.g,.trust{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr}.g,.gal{grid-template-columns:1fr}.top span:last-child{display:none}.sticky{display:block;position:fixed;bottom:0;left:0;right:0;text-align:center;border-radius:0;padding:16px}}
+</style></head><body>
+<a class="nw" href="../index.html">Back to Northweb Studio</a>
+<div class="top w"><span>Emergency plumbing, 24 hours a day</span><span>Licensed and insured</span></div>
+<header class="w"><span class="logo"><svg width="30" height="30" viewBox="0 0 30 30"><path d="M15 3C15 3 6 13 6 19a9 9 0 0 0 18 0C24 13 15 3 15 3z" fill="#14507d"/></svg>Harbour Plumbing</span><a class="btn" href="tel:+15555550100">Call 555 555 0100</a></header>
+<div class="hero w"><div><h1>Plumbing problems solved today.</h1><p>Licensed plumbers on the road across the city. Upfront pricing, tidy work and a one year guarantee on every repair.</p><a class="btn" href="#quote">Get a free quote</a></div>
+<form class="card" id="quote"><h3>Request a quote</h3><input placeholder="Your name" required><input type="tel" placeholder="Phone number" required><select><option>Leaking or burst pipe</option><option>Blocked drain</option><option>Water heater</option><option>Bathroom or kitchen</option><option>Something else</option></select><button class="btn">Send request</button></form></div>
+<div class="trust w"><div><b>4.9 out of 5</b><span>from 600 reviews</span></div><div><b>25 years</b><span>serving the city</span></div><div><b>Same day</b><span>service available</span></div><div><b>1 year</b><span>repair guarantee</span></div></div>
+<section class="w"><h2>What we fix</h2><div class="g">
+<div class="s"><svg viewBox="0 0 44 44" fill="none" stroke="#e0530f" stroke-width="3"><path d="M22 5l8 14a10 10 0 1 1-16 0z"/></svg><h3>Leaks and bursts</h3><p>Fast repairs for pipes, taps and fittings, with no mess left behind.</p></div>
+<div class="s"><svg viewBox="0 0 44 44" fill="none" stroke="#e0530f" stroke-width="3"><circle cx="22" cy="22" r="16"/><path d="M12 22h20M22 12v20"/></svg><h3>Drains and sewers</h3><p>Camera inspections and clearing for slow or blocked drains.</p></div>
+<div class="s"><svg viewBox="0 0 44 44" fill="none" stroke="#e0530f" stroke-width="3"><rect x="10" y="6" width="24" height="32" rx="4"/><path d="M16 16h12M16 24h12"/></svg><h3>Water heaters</h3><p>Repair, replacement and upgrades to tankless systems.</p></div>
+<div class="s"><svg viewBox="0 0 44 44" fill="none" stroke="#e0530f" stroke-width="3"><path d="M6 30h32M10 30V14h24v16"/></svg><h3>Bathrooms</h3><p>Fixtures, showers and full renovations done properly.</p></div>
+<div class="s"><svg viewBox="0 0 44 44" fill="none" stroke="#e0530f" stroke-width="3"><path d="M8 34h28M14 34V12h16v22"/></svg><h3>Kitchens</h3><p>Sinks, dishwashers and gas lines installed to code.</p></div>
+<div class="s"><svg viewBox="0 0 44 44" fill="none" stroke="#e0530f" stroke-width="3"><path d="M22 6v32M6 22h32"/></svg><h3>Inspections</h3><p>Clear reports for buyers, sellers and landlords.</p></div></div></section>
+<section class="w"><h2>Recent work</h2><div class="gal">
+<figure><img src="https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?auto=format&fit=crop&w=900&q=70" alt="Plumber repairing a water heater" loading="lazy" onerror="this.remove()"><figcaption>Water heater repair, same day</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?auto=format&fit=crop&w=900&q=70" alt="Plumber working on pipes in a cabinet" loading="lazy" onerror="this.remove()"><figcaption>Under sink pipe replacement</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1615749721143-3a38368d3d05?auto=format&fit=crop&w=900&q=70" alt="Plumber fixing a sink" loading="lazy" onerror="this.remove()"><figcaption>Kitchen sink repair and clean up</figcaption></figure></div></section>
+<section class="w steps"><h2>How it works</h2><div class="g"><div><b>1</b><h3>Tell us the problem</h3><p>Call or send the form. We reply fast.</p></div><div><b>2</b><h3>Get a clear price</h3><p>You approve the cost before we start.</p></div><div><b>3</b><h3>We fix it right</h3><p>Tidy work, tested and guaranteed.</p></div></div></section>
+<section class="w"><h2>What customers say</h2><div class="g">
+<div class="rev"><i>★★★★★</i><p>Arrived within the hour and fixed the leak for exactly the price quoted.</p><small>Sample review, Dana L.</small></div>
+<div class="rev"><i>★★★★★</i><p>Tidy, polite and explained everything. No surprises on the invoice.</p><small>Sample review, Marc T.</small></div>
+<div class="rev"><i>★★★★★</i><p>Replaced our water heater in a single morning. Our plumber from now on.</p><small>Sample review, Priya S.</small></div></div></section>
+<section class="w" style="background:#f0f5f9"><h2>Questions</h2>
+<details><summary>Do you charge for quotes?</summary><p>No. Quotes are free and you approve the price before work begins.</p></details>
+<details><summary>Can you come the same day?</summary><p>Yes, for most calls. Emergencies are handled around the clock.</p></details>
+<details><summary>Are repairs guaranteed?</summary><p>Every repair comes with a one year guarantee on parts and labour.</p></details></section>
+<section class="w cta"><h2>Need a plumber now?</h2><p style="margin-bottom:22px">Call 555 555 0100 and we will be on our way.</p><a class="btn" href="tel:+15555550100">Call now</a></section>
+<footer class="w">Harbour Plumbing. Sample website designed by Northweb Studio.</footer>
+<a class="btn sticky" href="tel:+15555550100">Call 555 555 0100</a>
+<script>if(self!==top)document.querySelector('.nw').hidden=true;document.getElementById('quote').onsubmit=e=>{e.preventDefault();e.target.querySelector('button').textContent='Thanks, we will call you soon'}</script>
+</body></html>
